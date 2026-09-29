@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Professional responsive music player built with HTML, CSS and JavaScript">
+
+    <title>Music Player | LAKSHMIDEVI GUVVA</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <!-- Music Player -->
+        <section class="player">
+
+            <!-- Header -->
+            <header class="player-header">
+
+                <div>
+                    <p class="eyebrow">CODEALPHA INTERNSHIP</p>
+
+                    <h1>Music Player</h1>
+                </div>
+
+                <button
+                    class="icon-btn"
+                    id="muteBtn"
+                    aria-label="Mute"
+                    title="Mute / Unmute">
+                    🔊
+                </button>
+
+            </header>
+
+
+            <!-- Album Artwork -->
+            <div class="artwork-wrapper">
+
+                <div class="artwork" id="artwork">
+
+                    <div class="vinyl">
+                        <div class="vinyl-center"></div>
+                    </div>
+
+                    <div class="music-symbol">
+                        ♪
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Song Information -->
+            <div class="song-info">
+
+                <h2 id="songTitle">
+                    Select a song
+                </h2>
+
+                <p id="artistName">
+                    Your Music Library
+                </p>
+
+            </div>
+
+
+            <!-- Progress -->
+            <div class="progress-section">
+
+                <input
+                    type="range"
+                    id="progressBar"
+                    min="0"
+                    max="100"
+                    value="0"
+                    aria-label="Song progress">
+
+                <div class="time-container">
+
+                    <span id="currentTime">
+                        00:00
+                    </span>
+
+                    <span id="duration">
+                        00:00
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Main Controls -->
+            <div class="controls">
+
+                <button
+                    class="control-btn"
+                    id="previousBtn"
+                    aria-label="Previous song"
+                    title="Previous">
+                    ⏮
+                </button>
+
+                <button
+                    class="play-btn"
+                    id="playBtn"
+                    aria-label="Play"
+                    title="Play">
+                    ▶
+                </button>
+
+                <button
+                    class="control-btn"
+                    id="nextBtn"
+                    aria-label="Next song"
+                    title="Next">
+                    ⏭
+                </button>
+
+            </div>
+
+
+            <!-- Volume -->
+            <div class="volume-section">
+
+                <span>🔈</span>
+
+                <input
+                    type="range"
+                    id="volumeBar"
+                    min="0"
+                    max="1"
+                    step="0.01"
+                    value="0.8"
+                    aria-label="Volume">
+
+                <span>🔊</span>
+
+            </div>
+
+
+            <!-- Playlist -->
+            <div class="playlist-section">
+
+                <div class="playlist-heading">
+
+                    <h3>Playlist</h3>
+
+                    <span id="trackCount">
+                        0 Songs
+                    </span>
+
+                </div>
+
+                <div
+                    class="playlist"
+                    id="playlist">
+                </div>
+
+            </div>
+
+
+            <!-- Keyboard Hint -->
+            <p class="keyboard-hint">
+                Space: Play/Pause &nbsp; • &nbsp;
+                ← → : Previous/Next
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Audio Element -->
+    <audio id="audioPlayer"></audio>
+
+
+    <footer>
+
+        <p>
+            © 2026 LAKSHMIDEVI GUVVA
+            • CodeAlpha Internship
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
